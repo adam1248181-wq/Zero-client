@@ -1,0 +1,37 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "token-harbor": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Token Harbor",
+      "options": {
+        "baseURL": "https://tokenharbor.ai/v1",
+        "apiKey": "{env:TOKEN_HARBOR_API_KEY}"
+      },
+      "models": {
+        "mimo-v2.6-flash:free": {
+          "name": "MiMo V2.6 Flash"
+        },
+        "deepseek-v4.1-flash:free": {
+          "name": "DeepSeek V4.1 Flash"
+        },
+        "qwen3.8-flash:free": {
+          "name": "Qwen3.8 Flash"
+        }
+      }
+    },
+    "hive-ai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Hive",
+      "options": {
+        "baseURL": "https://api-cdn.thehive.ai/api/v3",
+        "apiKey": "{env:HIVE_API_KEY}"
+      },
+      "models": {
+        "deepseek-ai/deepseek-v4.1-flash": {
+          "name": "DeepSeek V4.1 Flash"
+        }
+      }
+    }
+  }
+}
